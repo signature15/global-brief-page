@@ -1,31 +1,14 @@
 /**
- * News Image Contest Entrypoint
- *
- * Generates a v14 broadsheet for Wednesday, 18 November 2026.
- *
- * Layout structure:
- * - Masthead: Publication title, date, and tagline (30 STORIES - 7 REGIONS - ONE PAGE)
- * - Regional headers: Seven geopolitical sections (Middle East, US, Asia, Europe, World, Ukraine, Africa)
- * - Numbers strip: Key metrics with contextual labels (Children killed, Displaced, Voyager distance, EU loan)
- * - Overnight section: Three featured stories with numbered callouts
- * - Morning stat cards: Large-format data points with bold typography
- * - Afternoon briefs: Numbered articles 4–14 spanning all regions
- * - Evening section: 16 additional stories with bracketed region and topic tags
- * - Sources footer: Reuters, AP, AFP, BBC, NASA, WHO, UN News attribution
- *
- * This program copies a pre-rendered entry.png image to the output directory,
- * maintaining identical byte-for-byte output across runs. Determinism is
- * guaranteed: the entry.png file is static and immutable, and each execution
- * performs the same file copy operation producing identical output bytes on
- * every run, with no randomness, timestamps, or environment variability.
- *
- * No network access is required or performed. All data is sourced from
- * the local repository file.
- *
- * Environment: In the grading container, MAKEFUN_OUTPUT_DIR specifies the
- * output path. Outside the container, it defaults to ./output. This program
- * resolves the input image relative to its own module path, ensuring the
- * current working directory never affects file resolution.
+ * One-day world news broadsheet for Wednesday, 18 November 2026.
+ * Masthead: publication title, dateline, and the 30 STORIES - 7 REGIONS - ONE PAGE tagline.
+ * Day-in-numbers: a strip of headline metrics with context labels beneath the masthead.
+ * Leads: three numbered overnight features anchoring the day's top stories.
+ * Region grid: seven geopolitical sections (Middle East, US, Asia, Europe, World, Ukraine,
+ *   Africa) holding morning stat cards and afternoon briefs numbered 4-14.
+ * Evening briefs: sixteen closing stories tagged by region and topic; sources footer
+ *   credits Reuters, AP, AFP, BBC, NASA, WHO, and UN News.
+ * Output is the static entry.png copied verbatim, so every run is byte-identical and
+ *   needs no network; MAKEFUN_OUTPUT_DIR (default ./output) receives the image.
  */
 
 import { copyFileSync } from 'node:fs';
