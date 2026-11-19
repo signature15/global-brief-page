@@ -2,7 +2,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/signature15/global-brief-page/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/signature15/global-brief-page/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-## What it does
+## One Day in World News - Wednesday 18 November 2026
 
 This project generates a deterministic front-page news poster image for Tuesday, November 17, 2026. The poster captures the world's headlines in a single rendered frame, combining editorial design with global news coverage. Running the program copies the pre-rendered entry image to the output directory, producing byte-identical output on every execution.
 
