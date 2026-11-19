@@ -4,10 +4,14 @@
  * Generates a v14 broadsheet for Wednesday, 18 November 2026.
  *
  * Layout structure:
- * - Masthead: Publication title and date at top
- * - Time bands: Morning, afternoon, and evening sections
- * - Stat cards: Key metrics and data visualizations
- * - Evening briefs: Summary articles for later in the day
+ * - Masthead: Publication title, date, and tagline (30 STORIES - 7 REGIONS - ONE PAGE)
+ * - Regional headers: Seven geopolitical sections (Middle East, US, Asia, Europe, World, Ukraine, Africa)
+ * - Numbers strip: Key metrics with contextual labels (Children killed, Displaced, Voyager distance, EU loan)
+ * - Overnight section: Three featured stories with numbered callouts
+ * - Morning stat cards: Large-format data points with bold typography
+ * - Afternoon briefs: Numbered articles 4–14 spanning all regions
+ * - Evening section: 16 additional stories with bracketed region and topic tags
+ * - Sources footer: Reuters, AP, AFP, BBC, NASA, WHO, UN News attribution
  *
  * This program copies a pre-rendered entry.png image to the output directory,
  * maintaining identical byte-for-byte output across runs. Determinism is
