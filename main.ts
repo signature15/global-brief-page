@@ -1,3 +1,4 @@
+import { join } from 'node:path';
 /**
  * entry.png — "The Daily Brief", a one-page printed-style broadsheet for Wednesday 18 November 2026.
  *
@@ -24,13 +25,13 @@
  * (./output by default, override with MAKEFUN_OUTPUT_DIR), so every run produces identical bytes.
  */
 
-import { copyFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { copyFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const sourceFile = join(__dirname, 'entry.png');
-const outputDir = process.env.MAKEFUN_OUTPUT_DIR || './output';
+const outputDir = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 const outputFile = join(outputDir, 'entry.png');
+mkdirSync(outputDir, { recursive: true });
 
 copyFileSync(sourceFile, outputFile);
