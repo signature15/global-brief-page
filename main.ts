@@ -1,14 +1,14 @@
 /**
- * One-day world news broadsheet for Wednesday, 18 November 2026.
- * Masthead: publication title, dateline, and the 30 STORIES - 7 REGIONS - ONE PAGE tagline.
- * Day-in-numbers: a strip of headline metrics with context labels beneath the masthead.
- * Leads: three numbered overnight features anchoring the day's top stories.
- * Region grid: seven geopolitical sections (Middle East, US, Asia, Europe, World, Ukraine,
- *   Africa) holding morning stat cards and afternoon briefs numbered 4-14.
- * Evening briefs: sixteen closing stories tagged by region and topic; sources footer
- *   credits Reuters, AP, AFP, BBC, NASA, WHO, and UN News.
- * Output is the static entry.png copied verbatim, so every run is byte-identical and
- *   needs no network; MAKEFUN_OUTPUT_DIR (default ./output) receives the image.
+ * Global news briefing for Wednesday, 18 November 2026: a single-page broadsheet.
+ * Masthead displays the publication banner, date, and the defining motto: 30 STORIES - 7 REGIONS - ONE PAGE.
+ * Day-in-numbers section summarizes key statistics and figures below the header to set context.
+ * Three lead stories anchor the editorial focus, numbered to establish hierarchy.
+ * Seven-region grid organizes coverage across Middle East, United States, Asia-Pacific, Europe, Africa, Ukraine, and World.
+ * Morning stat cards and afternoon briefings (stories 4–14) populate the grid with breaking updates and analysis.
+ * Evening briefs round out the day with sixteen concluding stories, each tagged by geography and subject matter.
+ * Sources footer attributes reporting to Reuters, Associated Press, Agence France-Presse, BBC, NASA, World Health Organization, and UN News.
+ * Entry.png is delivered as a static, byte-identical image file; no network calls or regeneration occur.
+ * Output directory defaults to ./output; set MAKEFUN_OUTPUT_DIR to customize where the image lands.
  */
 
 import { copyFileSync } from 'node:fs';
